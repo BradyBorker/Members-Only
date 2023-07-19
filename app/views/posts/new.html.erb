@@ -1,4 +1,8 @@
 <%= form_with model: @post do |form| %>
+    <div style="display: flex; flex-direction: column; width: 25%; margin-bottom: 5px">
+        <%= form.label :author, "Author:" %>
+        <%= form.text_field :author %>
+    </div>
     <div style="display: flex; flex-direction: column; width: 50%; resize: vertical; margin-bottom: 5px;">
         <%= form.label :body, "Write Your Secret Post:" %>
         <%= form.text_area :body %>
