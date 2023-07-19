@@ -1,0 +1,7 @@
+<%= form_with model: @post do |form| %>
+    <div style="display: flex; flex-direction: column; width: 50%; resize: vertical; margin-bottom: 5px;">
+        <%= form.label :body, "Write Your Secret Post:" %>
+        <%= form.text_area :body %>
+    </div>
+    <%= form.submit "Submit Post" %>
+<% end %>
