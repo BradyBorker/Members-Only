@@ -2,7 +2,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create]
 
     def index 
-
+        @post = Post.all
     end
     
     def new
@@ -11,12 +11,12 @@ class PostsController < ApplicationController
 
     def create
         @post = Post.new(post_params)
-        @post.user_id = current_user
+        @post.user_id = current_user.id
 
         if @post.save
-            redirect_to post_path
+            redirect_to posts_path
         else
-            render :new
+            render :new, status: :unprocessable_entity
         end
     end
 

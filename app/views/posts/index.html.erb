@@ -1,0 +1,11 @@
+<% @post.each do |post| %>
+    <div>
+        <% if user_signed_in? %>
+            <%= post.user.email %>
+        <% else %>
+            <%= "XXXXX" %>
+        <% end %>
+
+        <%= post.body %>
+    </div>
+<% end %>
