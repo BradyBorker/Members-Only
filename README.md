@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Odin Project Ruby On Rail Project: Members Only
+https://www.theodinproject.com/lessons/ruby-on-rails-members-only#additional-resources
 
-Things you may want to cover:
+# Goal
+Display all posts and their authors only if a user is logged in and authenticated.
+Otherwise only display post :body data.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Authenticate User model using Devise
+https://github.com/heartcombo/devise
